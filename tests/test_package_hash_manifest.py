@@ -2,7 +2,7 @@ from pathlib import Path
 import csv,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 def test_package_sha256_inventory_matches_files():
- p=ROOT/'data/package_sha256.csv'
+ p=ROOT/'data/provenance/package_sha256.csv'
  rows=list(csv.DictReader(p.open(newline='',encoding='utf-8')))
  assert len(rows)>=70
  for row in rows:

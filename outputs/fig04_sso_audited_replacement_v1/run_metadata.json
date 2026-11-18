@@ -1,0 +1,98 @@
+{
+  "frozen_inputs": "/home/hy/WMU_final/data/frozen_inputs",
+  "manifest_sha256": "0cd23da0f9b6eeb68951ebd1209feeeda85489a0817f034624722985a3883f54",
+  "source_scope": "frozen 1,080-case raw corpus; read-only analysis; no simulation, feature extraction, model training, or raw regeneration",
+  "execution_bus_verdict": {
+    "ieee14": {
+      "bus": 7,
+      "evidence": "current corpus byte-identical to archive fault_generalization_previous_bus7_20260812; historical wmu14_util.m configures SSOInjectionBus=7"
+    },
+    "ieee30": {
+      "bus": 30,
+      "evidence": "documented executed-run provenance; physical electrical injection/PCC topology remains unverified"
+    }
+  },
+  "window_s": [
+    0.08,
+    0.28
+  ],
+  "frequency_components_hz": [
+    25.0,
+    75.0
+  ],
+  "rendered_font": "Liberation Serif",
+  "selected_cases": [
+    {
+      "Network": "ieee14",
+      "CaseID": 19,
+      "Background": "NoSSO",
+      "FaultBus": 2,
+      "FaultType": "SLG",
+      "ResistanceOhm": 10.0,
+      "AngleDeg": 0,
+      "ReferenceBus": 7,
+      "RawCSV": "/home/hy/WMU_final/data/frozen_inputs/waveforms_selected/ieee14_case_0019__FT_SLG__BUS_02__R_10__ANG_000__BG_NoSSO.csv",
+      "SHA256": "807d5f11ba45cbdb1ace0ac14ccc25894e6c901f04684cd6345ca8a6fe0eb559"
+    },
+    {
+      "Network": "ieee14",
+      "CaseID": 20,
+      "Background": "SSO25Hz_M01",
+      "FaultBus": 2,
+      "FaultType": "SLG",
+      "ResistanceOhm": 10.0,
+      "AngleDeg": 0,
+      "ReferenceBus": 7,
+      "RawCSV": "/home/hy/WMU_final/data/frozen_inputs/waveforms_selected/ieee14_case_0020__FT_SLG__BUS_02__R_10__ANG_000__BG_SSO25Hz_M01.csv",
+      "SHA256": "7fcd7e6f3af6d70baac9d2612bf82105a99d6d017abfaa8532bdce7fd0f0a4f8"
+    },
+    {
+      "Network": "ieee14",
+      "CaseID": 21,
+      "Background": "SSO25Hz_M03",
+      "FaultBus": 2,
+      "FaultType": "SLG",
+      "ResistanceOhm": 10.0,
+      "AngleDeg": 0,
+      "ReferenceBus": 7,
+      "RawCSV": "/home/hy/WMU_final/data/frozen_inputs/waveforms_selected/ieee14_case_0021__FT_SLG__BUS_02__R_10__ANG_000__BG_SSO25Hz_M03.csv",
+      "SHA256": "575a91324372c4439070bee119163033f049a539ac7e76089630ad956297d423"
+    },
+    {
+      "Network": "ieee30",
+      "CaseID": 559,
+      "Background": "NoSSO",
+      "FaultBus": 1,
+      "FaultType": "SLG",
+      "ResistanceOhm": 10.0,
+      "AngleDeg": 0,
+      "ReferenceBus": 30,
+      "RawCSV": "/home/hy/WMU_final/data/frozen_inputs/waveforms_selected/ieee30_case_0559__FT_SLG__BUS_01__R_10__ANG_000__BG_NoSSO.csv",
+      "SHA256": "69d2aa8387f8decef26fa2d37fe66e377042580f9afacad8083ec09eb7eefb8f"
+    },
+    {
+      "Network": "ieee30",
+      "CaseID": 560,
+      "Background": "SSO25Hz_M01",
+      "FaultBus": 1,
+      "FaultType": "SLG",
+      "ResistanceOhm": 10.0,
+      "AngleDeg": 0,
+      "ReferenceBus": 30,
+      "RawCSV": "/home/hy/WMU_final/data/frozen_inputs/waveforms_selected/ieee30_case_0560__FT_SLG__BUS_01__R_10__ANG_000__BG_SSO25Hz_M01.csv",
+      "SHA256": "3f66af773c18d8698daf13a4f04968ae27723fe7d76660958e54bc47c388be09"
+    },
+    {
+      "Network": "ieee30",
+      "CaseID": 561,
+      "Background": "SSO25Hz_M03",
+      "FaultBus": 1,
+      "FaultType": "SLG",
+      "ResistanceOhm": 10.0,
+      "AngleDeg": 0,
+      "ReferenceBus": 30,
+      "RawCSV": "/home/hy/WMU_final/data/frozen_inputs/waveforms_selected/ieee30_case_0561__FT_SLG__BUS_01__R_10__ANG_000__BG_SSO25Hz_M03.csv",
+      "SHA256": "02cd56b83b9b43a3455f26c2cde3a7e9e95ba633ccd75d37a59b0f49f21fec20"
+    }
+  ]
+}

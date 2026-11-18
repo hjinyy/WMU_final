@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 import pandas as pd
-ROOT=Path(__file__).resolve().parents[1]/'results/paper_figures_resistance_generalization_v1_fig04_sso_audited_replacement'
+ROOT=Path(__file__).resolve().parents[1]/'outputs/fig04_sso_audited_replacement_v1'
 def test_audited_fig04_has_complete_separate_delivery():
  for p in ['png/fig04_sso_audited_replacement.png','pdf/fig04_sso_audited_replacement.pdf','captions/fig04_sso_audited_replacement.md','plot_data/fig04_sso_audited_replacement.csv','diagnostics/selected_cases_and_hashes.csv','run_metadata.json','README.md']:
   assert (ROOT/p).is_file(),p
