@@ -1,0 +1,17 @@
+NetworkID,WindowMode,FeatureSet,SelectedWMUBuses,FeatureCountPerWMU,InputColumnCount,ForbiddenFeatureNames,Status,NormVIDenominator
+ieee14,manifest_reference,C1_modified_PMU_like,2;6;9,6,18,,PASS,not applicable
+ieee14,manifest_reference,C2_WMU_Baseline,2;6;9,40,120,,PASS,not applicable
+ieee14,manifest_reference,C3_Baseline_plus_NormVI,2;6;9,44,132,,PASS,selected three WMUs only
+ieee14,manifest_reference,C4_C3_plus_time_domain,2;6;9,56,168,,PASS,selected three WMUs only
+ieee14,detected,C1_modified_PMU_like,2;6;9,6,18,,PASS,not applicable
+ieee14,detected,C2_WMU_Baseline,2;6;9,40,120,,PASS,not applicable
+ieee14,detected,C3_Baseline_plus_NormVI,2;6;9,44,132,,PASS,selected three WMUs only
+ieee14,detected,C4_C3_plus_time_domain,2;6;9,56,168,,PASS,selected three WMUs only
+ieee30,manifest_reference,C1_modified_PMU_like,6;1;2,6,18,,PASS,not applicable
+ieee30,manifest_reference,C2_WMU_Baseline,6;1;2,40,120,,PASS,not applicable
+ieee30,manifest_reference,C3_Baseline_plus_NormVI,6;1;2,44,132,,PASS,selected three WMUs only
+ieee30,manifest_reference,C4_C3_plus_time_domain,6;1;2,56,168,,PASS,selected three WMUs only
+ieee30,detected,C1_modified_PMU_like,6;1;2,6,18,,PASS,not applicable
+ieee30,detected,C2_WMU_Baseline,6;1;2,40,120,,PASS,not applicable
+ieee30,detected,C3_Baseline_plus_NormVI,6;1;2,44,132,,PASS,selected three WMUs only
+ieee30,detected,C4_C3_plus_time_domain,6;1;2,56,168,,PASS,selected three WMUs only

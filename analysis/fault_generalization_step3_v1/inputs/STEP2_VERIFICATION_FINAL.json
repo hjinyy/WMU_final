@@ -1,0 +1,118 @@
+{
+  "created_utc": "2026-11-23T12:42:37+00:00",
+  "status": "PASS_WITH_REVIEW_FLAGS",
+  "output_root": "/home/hy/WMU_project/results/fault_generalization_step2_v1/full_corpus_v2",
+  "case_count": 4752,
+  "cases_by_network": {
+    "ieee14": 1512,
+    "ieee30": 3240
+  },
+  "manifest_sha256": "6188e07acb7c1d680cc933c6587c841771d5c9c00e98987100c88c2c1fcb2032",
+  "raw_read_errors": 0,
+  "detector_status_counts": {
+    "DETECTED": 4730,
+    "NO_EVENT_DETECTED": 22
+  },
+  "onset_error_ms_detected": {
+    "n": 4730,
+    "within_5ms": 359,
+    "within_10ms": 4729,
+    "within_20ms": 4729,
+    "median_abs_error": 6.899999999999961,
+    "max_abs_error": 58.75000000000002
+  },
+  "window_status_counts": {
+    "manifest_reference|PASS": 4752,
+    "detected|PASS": 4729,
+    "detected|NO_DETECTION": 22,
+    "detected|windows_out_of_bounds_or_anchor_off_grid": 1
+  },
+  "feature_tables": {
+    "manifest_reference": {
+      "rows": 118368,
+      "cases_with_complete_bus_features": 4752,
+      "feature_columns": 62
+    },
+    "detected": {
+      "rows": 117998,
+      "cases_with_complete_bus_features": 4729,
+      "feature_columns": 62
+    }
+  },
+  "ml_evaluation": {
+    "status": "PASS",
+    "metric_rows": 64,
+    "fold_metric_rows": 320,
+    "fold_assignment_rows": 9504,
+    "oof_prediction_rows": 165184,
+    "paired_correctness_rows": 37832,
+    "leakage_audit_rows": 16,
+    "timing_error_rows": 48,
+    "artifact_sha256": {
+      "ml_evaluation_v1/run_metadata.json": "c518a53bf8f98f04b3c4dfbe5f6b1122522c0b21ff447c0b699662c531c6bdc3",
+      "ml_evaluation_v1/metrics.csv": "d096e7cc110b7c51848c6013755d81d0b06f50780c2d02253e8d75db303235f1",
+      "ml_evaluation_v1/fold_metrics.csv": "80e5402ac3a2ede64ab61d1f8cca016ee8625a04237d1d983f3bdcf799123f7e",
+      "ml_evaluation_v1/fold_assignments.csv": "40114cf1fe5250029b4887b825b0ec6a55c990c822e9e7a43f45096893a7693c",
+      "ml_evaluation_v1/fold_split_audit.csv": "9e76f71c694ed92127709ff170e606a95998b726c19d6e24f7c827231bfa50f9",
+      "ml_evaluation_v1/predictions_oof.csv": "d300881c3cf235168640a1181c42a5d81ee3a71ce72b5239711fd526653ab2b6",
+      "ml_evaluation_v1/paired_case_correctness.csv": "46f54e7ba49ca7e9aa082c8ff62ba3822ce6ab11416f4325f996899d9a6e75e7",
+      "ml_evaluation_v1/timing_error_performance.csv": "4666a46f69a47e300d3b249b822a0625f6239a6c5a4de918f106550e74afa8a4",
+      "ml_evaluation_v1/feature_leakage_audit.csv": "358a0bb4006d9666979d65a10240856a392214e9d7844ee5859a5d9340bd39f4",
+      "ml_evaluation_v1/model_feature_columns.csv": "6f2a8edb48f20d26f11d20ce477b034a0e533fdfc74b82399155d7fb4737e8aa"
+    }
+  },
+  "step1_runaway_flag_count": 18,
+  "step2_runaway_flag_count": 18,
+  "runaway_flag_unified_case_ids": [
+    757,
+    758,
+    759,
+    760,
+    761,
+    762,
+    763,
+    764,
+    765,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "note": "The 18 raw-voltage runaway records remain included and flagged; exclusion is confined to the planned ML sensitivity cohort. No causal alarm latency is claimed for the offline full-record-scaled detector.",
+  "artifact_hashes": {
+    "COMPLETE": "00818e44014806f980a9af80ffba107e78413eb7db2d92346ce52dbc53c9d7cf",
+    "summary.json": "52b83aec714f403ae2b3265b88e9bb7f21e203a0c5ae623c06e3b42a59bcedf1",
+    "run_metadata.json": "0b42546cddd61c9b60d6249394088c8eea1d36abf3a3808dc3721744db756f73",
+    "onset_predictions.csv": "93e579fd11716318cf60e463a91f0993c8a9157bcd28ba70fea5875ea7c505d7",
+    "window_feature_status.csv": "c7808619b14b102dc2507a2af2d780a71941d9e5e2a3b6f31bdab3e35ec42f37",
+    "raw_processing_errors.csv": "2523f9f62c0cd4835a19bf1081c3673e7e750f11d0f5ae37071b215b4e90ef70",
+    "onset_summary_by_condition.csv": "d0bd336196ab145eec894eea626cc0f7e34c22d68fba9a28ee2103da41605118",
+    "features_detected.csv.gz": "7e12f14d68e751bd8ce917925eacb77c4bbdc457eb8597261af019dffcd64cf6",
+    "features_manifest_reference.csv.gz": "b8b92ff44be2206a7a144ef6d98ea14c37e4e74f03da0760f71f3efb09e13cc0",
+    "integrated_manifest_4752_final.csv": "6188e07acb7c1d680cc933c6587c841771d5c9c00e98987100c88c2c1fcb2032",
+    "extract_step2_waveform_features.py": "0abacb87a4c7a2390715d8131cf3e60c3e6c0f34cfcc949d7d9d5137101d6e14",
+    "evaluate_step2_ml.py": "03355408121a0a84dfdc0c9244d704d3c5afda775557942478ffef002bd39b43",
+    "verify_step2_outputs.py": "c8589e4e0ebc6c4dc6f7f5543f57d1503eb8a5be3d9488808c2cd45cf947ba29",
+    "test_step2_waveform_features.py": "2eb2ae27c99f2d0ad9c9d95f5e6ede11e568799b0f4bd5b6aaa4370a322d4bd4",
+    "test_step2_ml.py": "8185664de3a84a98a583194da6bea0a378781aab650a3aff73104d18ee14bb40",
+    "requirements-step2.lock": "206157d879aa949a63d12dc1e9fad856ef66594e93c2ad4171e2f06e4f432df4",
+    "waveform_detector_source.py": "f371f44c8ab314f6cfe588ec974a7fc2fb0c139215e2a7e8c087b6f875d1f2a3",
+    "baseline_feature_source.py": "ec33e7ca4ea61a08473317984a5fcac30f0da5e26b4f961a05c2ebcc5525e5af",
+    "normvi_source.py": "4bf14297cb0a484e9129d898f1af7b3a765dda15941ac55f352b6dd6485e9805",
+    "ml_evaluation_v1/run_metadata.json": "c518a53bf8f98f04b3c4dfbe5f6b1122522c0b21ff447c0b699662c531c6bdc3",
+    "ml_evaluation_v1/metrics.csv": "d096e7cc110b7c51848c6013755d81d0b06f50780c2d02253e8d75db303235f1",
+    "ml_evaluation_v1/fold_metrics.csv": "80e5402ac3a2ede64ab61d1f8cca016ee8625a04237d1d983f3bdcf799123f7e",
+    "ml_evaluation_v1/fold_assignments.csv": "40114cf1fe5250029b4887b825b0ec6a55c990c822e9e7a43f45096893a7693c",
+    "ml_evaluation_v1/fold_split_audit.csv": "9e76f71c694ed92127709ff170e606a95998b726c19d6e24f7c827231bfa50f9",
+    "ml_evaluation_v1/predictions_oof.csv": "d300881c3cf235168640a1181c42a5d81ee3a71ce72b5239711fd526653ab2b6",
+    "ml_evaluation_v1/paired_case_correctness.csv": "46f54e7ba49ca7e9aa082c8ff62ba3822ce6ab11416f4325f996899d9a6e75e7",
+    "ml_evaluation_v1/timing_error_performance.csv": "4666a46f69a47e300d3b249b822a0625f6239a6c5a4de918f106550e74afa8a4",
+    "ml_evaluation_v1/feature_leakage_audit.csv": "358a0bb4006d9666979d65a10240856a392214e9d7844ee5859a5d9340bd39f4",
+    "ml_evaluation_v1/model_feature_columns.csv": "6f2a8edb48f20d26f11d20ce477b034a0e533fdfc74b82399155d7fb4737e8aa"
+  }
+}

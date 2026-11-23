@@ -1,0 +1,112 @@
+{
+  "status": "COMPLETE",
+  "scope": "train-only CV sensitivity; no 10-ohm test features or labels used",
+  "training_resistances_ohm": [
+    0.1,
+    1.0
+  ],
+  "candidate_models": [
+    "ExtraTrees",
+    "RandomForest"
+  ],
+  "feature_sets_per_sensor": {
+    "C1_modified_PMU_like": 6,
+    "C2_WMU_Baseline": 40,
+    "C3_Baseline_plus_NormVI": 44,
+    "C4_C3_plus_time_domain": 56
+  },
+  "folds": 5,
+  "grouping": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; pair the 0.1 and 1 ohm cases for each factorial condition in the same fold",
+  "selection_rule": "max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",
+  "selection": [
+    {
+      "NetworkID": "ieee14",
+      "Target": "FaultType",
+      "WindowMode": "manifest_reference",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 1.0,
+      "Accuracy_FoldMean": 1.0,
+      "ConditionGroups": 504,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    },
+    {
+      "NetworkID": "ieee14",
+      "Target": "FaultBusLabel",
+      "WindowMode": "manifest_reference",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 1.0,
+      "Accuracy_FoldMean": 1.0,
+      "ConditionGroups": 504,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    },
+    {
+      "NetworkID": "ieee30",
+      "Target": "FaultType",
+      "WindowMode": "manifest_reference",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 1.0,
+      "Accuracy_FoldMean": 1.0,
+      "ConditionGroups": 1080,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    },
+    {
+      "NetworkID": "ieee30",
+      "Target": "FaultBusLabel",
+      "WindowMode": "manifest_reference",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 0.9929030675554962,
+      "Accuracy_FoldMean": 0.9930555555555556,
+      "ConditionGroups": 1080,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    },
+    {
+      "NetworkID": "ieee14",
+      "Target": "FaultType",
+      "WindowMode": "detected",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 1.0,
+      "Accuracy_FoldMean": 1.0,
+      "ConditionGroups": 504,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    },
+    {
+      "NetworkID": "ieee14",
+      "Target": "FaultBusLabel",
+      "WindowMode": "detected",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 1.0,
+      "Accuracy_FoldMean": 1.0,
+      "ConditionGroups": 504,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    },
+    {
+      "NetworkID": "ieee30",
+      "Target": "FaultType",
+      "WindowMode": "detected",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 1.0,
+      "Accuracy_FoldMean": 1.0,
+      "ConditionGroups": 1080,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    },
+    {
+      "NetworkID": "ieee30",
+      "Target": "FaultBusLabel",
+      "WindowMode": "detected",
+      "Model": "ExtraTrees",
+      "FeatureSet": "C1_modified_PMU_like",
+      "MacroF1_FoldMean": 0.9937872752305535,
+      "Accuracy_FoldMean": 0.9939814814814815,
+      "ConditionGroups": 1080,
+      "GroupDefinition": "Network + FaultBus + FaultType + FaultInceptionAngleDeg + BackgroundName; resistance deliberately excluded"
+    }
+  ],
+  "feature_rows_by_window_mode": 9504
+}

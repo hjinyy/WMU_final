@@ -1,0 +1,9 @@
+NetworkID,Target,WindowMode,SelectedModel,SelectedFeatureSet,TrainingCasesAfterRunawayExclusion,RunawayTrainCasesExcluded,TestCasesTotal,ValidTestWindows,WindowCoverage,ConditionalAccuracy,ConditionalMacroF1,EndToEndCorrectRate,SelectionWasOriginallyOnFullTrainingSet
+ieee14,FaultType,manifest_reference,ExtraTrees,C1_modified_PMU_like,1008,0,324,324,1.0,0.25,0.1,0.25,True
+ieee14,FaultBusLabel,manifest_reference,ExtraTrees,C1_modified_PMU_like,1008,0,324,324,1.0,0.1574074074074074,0.06275873488988244,0.1574074074074074,True
+ieee30,FaultType,manifest_reference,ExtraTrees,C1_modified_PMU_like,2142,18,900,900,1.0,0.25,0.1,0.25,True
+ieee30,FaultBusLabel,manifest_reference,ExtraTrees,C1_modified_PMU_like,2142,18,900,900,1.0,0.04,0.002564102564102564,0.04,True
+ieee14,FaultType,detected,ExtraTrees,C1_modified_PMU_like,1008,0,324,304,0.9382716049382716,0.26644736842105265,0.10519480519480519,0.25,True
+ieee14,FaultBusLabel,detected,ExtraTrees,C1_modified_PMU_like,1008,0,324,304,0.9382716049382716,0.10855263157894737,0.05097482332799002,0.10185185185185185,True
+ieee30,FaultType,detected,ExtraTrees,C1_modified_PMU_like,2142,18,900,897,0.9966666666666667,0.2508361204013378,0.10026737967914438,0.25,True
+ieee30,FaultBusLabel,detected,ExtraTrees,C1_modified_PMU_like,2142,18,900,897,0.9966666666666667,0.03678929765886288,0.0023655913978494624,0.03666666666666667,True

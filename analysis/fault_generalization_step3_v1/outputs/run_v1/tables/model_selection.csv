@@ -1,0 +1,9 @@
+NetworkID,Target,WindowMode,SelectedModel,SelectedFeatureSet,SelectionMacroF1,SelectionAccuracy,FeatureColumns,SelectionRule,TrainingRunawayExcluded
+ieee14,FaultType,manifest_reference,ExtraTrees,C1_modified_PMU_like,1.0,1.0,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
+ieee14,FaultBusLabel,manifest_reference,ExtraTrees,C1_modified_PMU_like,1.0,1.0,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
+ieee30,FaultType,manifest_reference,ExtraTrees,C1_modified_PMU_like,1.0,1.0,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
+ieee30,FaultBusLabel,manifest_reference,ExtraTrees,C1_modified_PMU_like,0.9934440174740322,0.9935185185185185,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
+ieee14,FaultType,detected,ExtraTrees,C1_modified_PMU_like,1.0,1.0,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
+ieee14,FaultBusLabel,detected,ExtraTrees,C1_modified_PMU_like,1.0,1.0,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
+ieee30,FaultType,detected,ExtraTrees,C1_modified_PMU_like,1.0,1.0,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
+ieee30,FaultBusLabel,detected,ExtraTrees,C1_modified_PMU_like,0.9981060476759401,0.9981481481481481,18,"max fold-mean MacroF1, then Accuracy; ties prefer fewer features, ExtraTrees, then C1-C4 order",False
